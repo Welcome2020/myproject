@@ -18,7 +18,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
+            "aot": false,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Registration-Form"
+    }
+  },
+  "defaultProject": "Registration-Form",
+  "cli": {
+    "analytics": "80104aa9-0d2b-4b41-8ffd-288b8a42cfa2"
+  }
 }

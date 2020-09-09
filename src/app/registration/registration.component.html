@@ -1,0 +1,108 @@
+   <form  (ngSubmit)="onSubmit()" class = "form from-register" novalidate >
+     
+<td></td>
+       <div class="card-body" >
+      <label for="firstName">First Name</label>
+      <input type="text" max class="form-control" name = "firstName"  [(ngModel)] = "registration.firstName" required placeholder="Please Enter Your First Name">
+    
+    </div>
+    <div class = "card-body">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" name = "lastName" [(ngModel)] = "registration.lastName" required placeholder="Please Enter Your Last Name">
+
+    
+    </div>  
+    
+        <div class="card-body">
+        <label for="joiningDate">Joining Date</label>
+        <input type="date" class="form-control" name = "joiningDate" [(ngModel)] = "registration.joiningDate" required placeholder="Joining Date">
+      </div>
+
+      <div class="card-body">
+        <label for="birthDate">Birth Date</label>
+        <input type="date" class="form-control" name = "birthDate"[(ngModel)] = "registration.birthDate" required placeholder="Date Of Birth">
+      </div>
+      
+      <div class="card-body">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" name = "address"[(ngModel)] = "registration.address" required placeholder="Address">
+      </div>
+    
+    
+      <div class="card-body">
+        <label for="mobileNumber">Mobile Number</label>
+        <input type="tel" class="form-control" name = "mobileNumber"[(ngModel)] = "registration.mobileNumber"  placeholder="Mobile Number">
+      </div>
+    
+      <div class="card-body">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" class="form-control" name = "phoneNumber"[(ngModel)] = "registration.phoneNumber" required placeholder="Phone Number">
+      </div>
+
+      <div class="card-body">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" name = "email" [(ngModel)] = "registration.email" required placeholder="Email">
+      
+      </div>
+<div>
+  <label for="credentialType">Credential Type</label>
+  <input type="text" class="form-control" name = "credentialType" [(ngModel)] = "registration.credentialType"  placeholder="Please Enter Your Level Of Credentials">
+
+
+</div>
+
+<div class = "card-body">
+
+  <label for="field">Field</label>
+  <input type="text" class="form-control" name = "field"  [(ngModel)] = "registration.field" required placeholder="Please Enter Your Field Of Education">
+
+</div>
+
+      
+     
+      <div class="card-body">
+        <label for="instituteName">Institution</label>
+        <input type="text" class="form-control"  name = "instituteName" maxlength="255" [(ngModel)] = "registration.instituteName" required placeholder="Please Enter The Name Of The Institute">
+   
+      </div>
+
+        
+      
+       
+        <div class="card-body">
+          <label for="yearOfGraduation">Year Of Graduation</label>
+          <input type="number" class="form-control"  name = "instituteName" maxlength="5" max="5" [(ngModel)] = "registration.yearOfGraduation" required placeholder="Please Enter The Year Of Graduation">
+        </div>
+     
+    
+       <div class="card-body">
+
+        <label for="employerName">EmployerName</label>
+        <input type="text" class="form-control" name = "employerName" [(ngModel)] = "registration.employerName"  placeholder="Please Enter The Employer Name">
+      </div>
+      <div class="card-body">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" name = "title"  [(ngModel)] = "registration.title" required placeholder="Please Enter Your Employment Title">
+      </div>
+      <div class="card-body">
+          <label for="phoneNumber">PhoneNumber</label>
+          <input type="tel" class="form-control" maxlength="255"  name = "phoneNumber" maxlength="255" [(ngModel)] = "registration.phoneNumber" required placeholder="Please Enter The Phone Number Of The Employer">
+        </div>
+
+        <label for="isSponsored">IsSponsored</label>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="isSponsored" [(ngModel)] = "registration.isSponsored"  value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+          Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id  name="isSponsored" [(ngModel)] = "registration.isSponsored" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            No
+          </label>
+        </div>
+       
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
